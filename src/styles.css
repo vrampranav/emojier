@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+.App {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+:root {
+  --primary-color: yellowgreen;
+  --secondary-color: gray;
+}
+input {
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}
+.meaning {
+  min-height: 5vh;
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+  color: darkblue;
+}
+.emoji {
+  padding: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-weight: bold;
+  margin: -8px;
+  background: var(--primary-color);
+}
+footer p {
+  margin-left: -8px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 1.5rem;
+}
+.title {
+  color: var(--primary-color);
+}
+.tag {
+  color: var(--secondary-color);
+}

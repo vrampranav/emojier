@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 
+//Emoji Dictionary
 const emojiDictionary = {
   "😀": "Grinning Face",
   "😉": "Winking Face",
@@ -41,14 +42,17 @@ const emojiDictionary = {
 };
 
 export default function App() {
+  //Getting the keys from emoji dictionary
   const emojiKeys = Object.keys(emojiDictionary);
   const emojis = [];
   let start = 0;
   let count = 6;
+  //This is just to have 6 emojis in each line
   while (emojiKeys.length !== 0) {
     emojis.push(emojiKeys.splice(start, count));
   }
   let [meaning, setMeaning] = useState("");
+  //Input Field Handler
   function inputEmojiHandler(e) {
     //console.log(e.target.value);
     var emojiInput = e.target.value;

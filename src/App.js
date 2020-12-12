@@ -84,7 +84,7 @@ export default function App() {
       <p className="tag">Available Emojis</p>
       {emojis.map((emojiList) => {
         return (
-          <div key={emojiList}>
+          <div key={emojiList} className="emojiDiv">
             {emojiList.map((emoji) => {
               return (
                 <span

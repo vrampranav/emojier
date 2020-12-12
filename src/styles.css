@@ -8,6 +8,9 @@
   --primary-color: yellowgreen;
   --secondary-color: gray;
 }
+body {
+  margin: 0;
+}
 input {
   width: 50%;
   padding: 0.5rem;
@@ -25,21 +28,27 @@ input {
   font-size: 2rem;
   cursor: pointer;
 }
+.emojiDiv {
+  margin: 0 1.2rem;
+}
+.emojiDiv:last-of-type {
+  margin-bottom: 6rem;
+}
+
 footer {
   position: fixed;
   width: 100%;
   bottom: 0;
   font-weight: bold;
-  margin: -8px;
-  background: var(--primary-color);
-  padding: 1.5rem;
+  color: black;
+  background: yellowgreen;
 }
 footer p {
   margin-left: -8px;
-  margin-block-start: 0;
   margin-right: -8px;
+  margin-block-start: 0;
   margin-block-end: 0;
-  letter-spacing: 0.1rem;
+  padding: 1.5rem;
 }
 .title {
   color: var(--primary-color);
